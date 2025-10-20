@@ -1,6 +1,7 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   background-color: #fff;
@@ -22,7 +23,6 @@ a {
   display: inline-block;
   color: #000;
 }
-
 a:hover {
   color: unset;
   text-decoration: none;
@@ -55,24 +55,19 @@ label {
   padding-top: 125px;
   padding-bottom: 125px;
 }
-
 .mt-padding__lg--t {
   padding-top: 125px;
 }
-
 .mt-padding__lg--b {
   padding-bottom: 125px;
 }
-
 .mt-padding__md--tb {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
 .mt-padding__md--t {
   padding-top: 80px;
 }
-
 .mt-padding__md--b {
   padding-bottom: 80px;
 }
@@ -84,17 +79,14 @@ label {
   background-color: #fff;
   color: #00a651;
 }
-
 .btn__primary {
   border-radius: 50px;
   border: 2px solid #00a651;
 }
-
 .btn__primary:hover {
   color: #fff;
   background-color: #00a651;
 }
-
 .btn__secondary {
   color: #929292;
   border: 1px solid #929292;
@@ -102,23 +94,20 @@ label {
   font-size: 15px;
   text-transform: capitalize;
 }
-
 .btn__secondary:hover, .btn__secondary.active {
   border-color: #00a651;
   color: #00a651;
 }
-
 .btn__tertiary {
   background-color: #00a651;
   border: 2px solid #00a651;
+  color: #fff;
   border-radius: 0;
 }
-
 .btn__tertiary:hover, .btn__tertiary.active {
   color: #00a651;
   background-color: transparent;
 }
-
 .btn__tertiary.active:hover {
   background-color: #00a651;
   color: #fff;
@@ -127,18 +116,13 @@ label {
 .slider {
   position: relative;
 }
-
 .slider .slick-dots {
   position: absolute;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translateX(-50%);
   display: flex;
 }
-
 .slider .slick-dots button {
   font-size: 0;
   height: 0;
@@ -148,9 +132,8 @@ label {
   margin-right: 10px;
   position: relative;
 }
-
 .slider .slick-dots button:after {
-  content: '';
+  content: "";
   height: 10px;
   width: 10px;
   display: block;
@@ -158,7 +141,6 @@ label {
   position: absolute;
   background-color: #00a651;
 }
-
 .slider button.slick-arrow {
   font-size: 0;
   position: absolute;
@@ -169,7 +151,6 @@ label {
   outline: none;
   background-color: transparent;
 }
-
 .slider button.slick-arrow:before {
   content: "\f107";
   color: #00a651;
@@ -179,24 +160,18 @@ label {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-size: 80px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-
 .slider button.slick-next {
   right: 15%;
   z-index: 0;
 }
-
 .slider button.slick-next:before {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
-
 .slider button.slick-prev {
   left: 15%;
 }
-
 .slider .slick-dots .slick-active button:after {
   width: 20px;
   left: 0;
@@ -211,21 +186,15 @@ label {
   border-radius: 30px;
   outline: none;
   border: unset;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 .form-wrapper__menu-search .mt-input-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
-
 .form-wrapper__menu-search .mt-input-wrapper input {
   border-radius: 6px;
 }
-
 .form-wrapper__menu-search .mt-input-wrapper input[type=text] {
   width: 100px;
   border-top-left-radius: 0;
@@ -235,18 +204,15 @@ label {
   padding: 3px 6px;
   color: #fff;
 }
-
 .form-wrapper__menu-search .mt-input-wrapper input[type=submit] {
   width: 25px;
   position: relative;
   z-index: 1;
   opacity: 0;
 }
-
 .form-wrapper__menu-search .mt-input-wrapper input[type=submit]:hover ~ span.icon {
   background-color: #fff;
 }
-
 .form-wrapper__menu-search .mt-input-wrapper span.icon {
   display: block;
   background-color: #b0cdc5;
@@ -255,36 +221,28 @@ label {
   color: #00a651;
   width: 25px;
   margin-left: -25px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 .form-wrapper__menu-search .mt-input-wrapper span.icon:before {
   content: "\f002";
   position: absolute;
   top: 5px;
   left: 5px;
 }
-
 .form-wrapper__newletter .mt-input-wrapper {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5fr 2fr;
-      grid-template-columns: 5fr 2fr;
+  grid-template-columns: 5fr 2fr;
   max-width: 700px;
   margin: auto;
 }
-
 .form-wrapper__newletter input {
   height: 60px;
 }
-
 .form-wrapper__newletter input[type=email] {
   text-align: center;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-
 .form-wrapper__newletter input[type=submit] {
   background-color: #00467c;
   color: #8b8e91;
@@ -294,7 +252,6 @@ label {
   border-bottom-left-radius: 0;
   padding: 0 30px;
 }
-
 .form-wrapper__newletter input[type=submit]:hover {
   color: #fff;
 }
@@ -308,7 +265,6 @@ label {
 .mt-lang {
   font-size: 16px;
 }
-
 .mt-lang .mt-current-lang {
   display: block;
   border: 1px solid #FFFFFF;
@@ -317,25 +273,21 @@ label {
   padding: 8px 0px;
   position: relative;
 }
-
 .mt-lang .mt-current-lang:before {
   content: "\f107";
   position: absolute;
   right: -14px;
   top: 12px;
 }
-
 .mt-lang .mt-current-lang:hover .mt-list {
   opacity: 1;
   visibility: visible;
 }
-
 .mt-lang .mt-list {
   opacity: 0;
   visibility: hidden;
   padding: 3px 8px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transition: all 0.2s;
   width: 100%;
   border-radius: 3px;
   background: #00a651;
@@ -343,7 +295,6 @@ label {
   z-index: 1;
   width: 45px;
 }
-
 .mt-lang .mt-list li a {
   color: #fff;
 }
@@ -354,24 +305,18 @@ label {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .mt-customer-icon ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .mt-customer-icon li {
   margin-right: 20px;
 }
-
 .mt-customer-icon li:last-of-type {
   margin-right: 0;
 }
-
 .mt-customer-icon li span.sell {
   display: inline-block;
   margin-left: 4px;
@@ -382,21 +327,16 @@ label {
   font-weight: 500;
   border-radius: 4px;
 }
-
 .mt-customer-icon img {
   height: 20px;
   width: auto;
-  -webkit-filter: invert(63%) sepia(14%) saturate(14%) hue-rotate(338deg) brightness(91%) contrast(96%);
-          filter: invert(63%) sepia(14%) saturate(14%) hue-rotate(338deg) brightness(91%) contrast(96%);
+  filter: invert(63%) sepia(14%) saturate(14%) hue-rotate(338deg) brightness(91%) contrast(96%);
 }
-
 .mt-customer-icon a:hover span.sell {
   background-color: #00a651;
 }
-
 .mt-customer-icon a:hover img, .mt-customer-icon .active img {
-  -webkit-filter: invert(48%) sepia(66%) saturate(4245%) hue-rotate(126deg) brightness(92%) contrast(104%);
-          filter: invert(48%) sepia(66%) saturate(4245%) hue-rotate(126deg) brightness(92%) contrast(104%);
+  filter: invert(48%) sepia(66%) saturate(4245%) hue-rotate(126deg) brightness(92%) contrast(104%);
 }
 
 .mt-header__top {
@@ -406,88 +346,67 @@ label {
   height: 100px;
   background-color: #fff;
 }
-
 .mt-header .ham-menu {
   display: none;
 }
-
 .mt-header .ham-menu__ham-line {
   background-color: #fff;
   display: block;
   width: 30px;
   height: 3px;
   margin-bottom: 4px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 .mt-header .ham-menu__ham-line:last-of-type {
   margin-bottom: 0;
 }
-
 .mt-header__menu-bar {
   background-color: #00a651;
 }
-
 .mt-header__menu-bar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   max-width: 1170px;
   margin: auto;
 }
-
 .mt-header__menu-bar li {
   padding: 12px 15px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
 }
-
 .mt-header__menu-bar li:hover > a, .mt-header__menu-bar li.current-menu-item > a {
   color: #002c15;
 }
-
 .mt-header__menu-bar li:hover .sub-menu {
   opacity: 1;
   visibility: visible;
-  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
   display: block;
-  -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
   border-left: unset;
   margin-left: 0;
   padding-left: 15px;
 }
-
 .mt-header__menu-bar li:hover .sub_toggle i:before {
   color: #002c15;
 }
-
 .mt-header__menu-bar .menu-item-has-children {
   margin-right: 5px;
   position: relative;
 }
-
 .mt-header__menu-bar .menu-item-has-children .sub_toggle {
   position: absolute;
   right: -18px;
   top: 15px;
   display: inline-block !important;
   font-size: 11px;
-  -webkit-transform: translate(-3px, 0px);
-          transform: translate(-3px, 0px);
+  transform: translate(-3px, 0px);
   color: #fff;
   margin-right: 15px;
   cursor: pointer;
 }
-
 .mt-header__menu-bar .menu-item-has-children .sub_toggle i:before {
   content: "\f0dd";
   position: absolute;
@@ -495,16 +414,13 @@ label {
   top: 3px;
   color: #fff;
 }
-
 .mt-header__menu-bar .menu-item-has-children:hover:before {
   color: #002c15;
 }
-
 .mt-header__menu-bar a {
   color: #fff;
   font-size: 15px;
 }
-
 .mt-header__menu-bar .sub-menu {
   display: block;
   width: 250px;
@@ -515,11 +431,9 @@ label {
   left: 0;
   z-index: 2;
   background: #00a651;
-  border-radius: 0 0  8px 8px;
-  -webkit-transition: all 0.5s;
+  border-radius: 0 0 8px 8px;
   transition: all 0.5s;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  transform: translateY(10px);
   padding: 10px 0;
 }
 
@@ -530,7 +444,6 @@ label {
   width: 100%;
   overflow: hidden;
 }
-
 .mt-billboard-item:before {
   content: "";
   position: absolute;
@@ -541,7 +454,6 @@ label {
   background-color: rgba(0, 0, 0, 0.15);
   z-index: 1;
 }
-
 .mt-billboard-item img {
   height: 100%;
   -o-object-fit: cover;
@@ -555,30 +467,25 @@ label {
   position: absolute;
   top: 50%;
   left: 25vw;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   max-width: 610px;
   color: #fff;
   z-index: 2;
 }
-
 .mt-billboard-content h2 {
   font-size: 80px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
 }
-
 .mt-billboard-content p {
   font-size: 22px;
   line-height: 1.4;
 }
-
 .mt-billboard-content .btn__primary {
   background-color: transparent;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
-
 .mt-billboard-content .btn__primary:hover {
   background-color: #00a651;
 }
@@ -586,17 +493,13 @@ label {
 .mt-small-banner .mt-billboard-item {
   max-height: 400px;
 }
-
 .mt-small-banner .mt-billboard-item img {
   max-height: 400px;
 }
-
 .mt-small-banner .mt-billboard-content {
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .mt-small-banner .mt-billboard-content h1 {
   text-transform: capitalize;
   color: #fff;
@@ -606,12 +509,10 @@ label {
 .mt-about {
   background-color: #fff;
 }
-
 .mt-about h5 {
   margin-top: 8px;
   margin-bottom: 15px;
 }
-
 .mt-about p {
   color: #141b1a;
 }
@@ -629,19 +530,16 @@ label {
   background-attachment: fixed;
   color: #fff;
 }
-
 .mt-milestone__content h5 {
   font-size: 50px;
   color: #fff;
   font-weight: 400;
   margin-bottom: 15px;
 }
-
 .mt-milestone__content h4 {
   font-size: 24px;
   margin-bottom: 15px;
 }
-
 .mt-milestone__content p {
   font-size: 16px;
 }
@@ -650,19 +548,13 @@ label {
 .mt-objective {
   background-color: #f1f2f2;
 }
-
 .mt-objective .slider-text p {
   font-weight: 500;
 }
-
 .mt-objective__targets {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .mt-objective__item {
   width: calc(50% - 100px);
   margin-right: 30px;
@@ -670,24 +562,20 @@ label {
   margin-bottom: 30px;
   position: relative;
 }
-
 .mt-objective__item:last-of-type {
   margin-bottom: 0;
 }
-
 .mt-objective__item img {
   width: 55px;
   position: absolute;
   top: 10px;
   left: -70px;
 }
-
 .mt-objective__item h4 {
   font-weight: bold;
   font-size: 24px;
   color: #00a651;
 }
-
 .mt-objective__item span {
   font-weight: 500;
   font-size: 20px;
@@ -695,7 +583,6 @@ label {
   margin-top: -5px;
   margin-bottom: 6px;
 }
-
 .mt-objective__item p {
   font-size: 16px;
 }
@@ -714,12 +601,10 @@ label {
   margin-bottom: 30px;
   position: relative;
 }
-
 .mt-product__content {
   background-color: #f5f5f5;
   padding: 15px;
 }
-
 .mt-product span.sale {
   position: absolute;
   top: 5px;
@@ -731,48 +616,39 @@ label {
   text-transform: uppercase;
   font-size: 14px;
 }
-
 .mt-product__title {
   border-bottom: 1px solid #e9e9e9;
   padding-bottom: 10px;
   margin-bottom: 10px;
   position: relative;
 }
-
 .mt-product__title a {
   height: 38px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .mt-product__view a {
   font-size: 14px;
 }
-
 .mt-product__view .eye:before {
   content: "\f06e";
   padding-right: 10px;
 }
-
 .mt-product .cart {
   position: absolute;
   bottom: 0px;
   right: 0;
 }
-
 .mt-product .cart:before {
   content: "\f07a";
 }
-
 .mt-product .cart:hover {
   color: #00a651;
 }
-
 .mt-product h5 {
   font-size: 16px;
   text-transform: capitalize;
 }
-
 .mt-product span {
   color: #00a651;
 }
@@ -785,21 +661,17 @@ label {
   background-attachment: fixed;
   color: #fff;
 }
-
 .mt-business-service h3 {
   color: #fff;
 }
-
 .mt-business-service h4 {
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 15px;
 }
-
 .mt-business-service__content img {
   max-width: 100px;
 }
-
 .mt-business-service__content p {
   font-size: 16px;
 }
@@ -811,36 +683,25 @@ label {
   background-size: cover;
   background-attachment: fixed;
 }
-
 .mt-plant .row {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
-
 .mt-plant .mt-overlay {
   background-color: rgba(255, 255, 255, 0.92);
 }
-
 .mt-plant h3 {
   font-size: 42px;
   line-height: 1.3;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-
 .mt-plant-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   overflow: hidden;
   border-radius: 20px;
   margin-right: 30px;
 }
-
 .mt-plant-img img {
   height: 100%;
   max-height: 500px;
@@ -851,12 +712,10 @@ label {
   background-color: #005da4;
   color: #fff;
 }
-
 .mt-newsletter h3 {
   color: #fff;
   margin-bottom: 15px;
 }
-
 .mt-newsletter p {
   margin-bottom: 45px;
 }
@@ -870,14 +729,12 @@ label {
      object-position: center;
   margin-bottom: 15px;
 }
-
 .mt-news-media .mt-date {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 15px;
 }
-
 .mt-news-media .mt-date:before {
   content: "\f073";
   color: #00a651;
@@ -888,7 +745,6 @@ label {
 .mt-collobration h2 {
   text-transform: uppercase;
 }
-
 .mt-collobration__img img {
   border-radius: 15px;
   border: 1px solid #dfdfdf;
@@ -902,21 +758,17 @@ label {
   color: #fff;
   padding: 30px 0;
 }
-
 .mt-footer-wrapper a {
   color: #fff;
 }
-
 .mt-footer-wrapper h4 {
   color: #00a651;
   font-size: 18px;
   text-transform: uppercase;
 }
-
 .mt-footer-wrapper a:hover {
   color: #00a651;
 }
-
 .mt-footer-wrapper input, .mt-footer-wrapper textarea {
   background-color: #393939;
   border: unset;
@@ -930,11 +782,9 @@ label {
   width: 100%;
   display: inline-block;
 }
-
 .mt-footer-wrapper textarea {
   margin-bottom: 0;
 }
-
 .mt-footer-wrapper input[type=submit] {
   color: #fff;
   font-weight: bold;
@@ -950,36 +800,23 @@ label {
 }
 
 .mt-payment-copyright, .mt-contact-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
   height: 100%;
 }
 
 .mt-payment-options {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .mt-payment-options img {
   height: 40px;
   width: auto;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-
 .mt-payment-options img:last-of-type {
   margin-right: 0;
 }
@@ -989,7 +826,6 @@ label {
   margin: 0;
   line-height: 1;
 }
-
 .copyright span {
   color: #00a651;
 }
@@ -1000,57 +836,42 @@ label {
 }
 
 .mt-social-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   font-size: 22px;
   max-width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .mt-social-icon__team {
   height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .mt-social-icon__team a {
   position: relative;
 }
-
 .mt-social-icon__team a:before {
-  content: '';
+  content: "";
   position: absolute;
   height: 50px;
   width: 50px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: #fff;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 .mt-social-icon__team a i {
   color: #00a651;
 }
-
 .mt-social-icon__team a i:before {
   position: relative;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 .mt-social-icon__team a:hover:before {
   background-color: #00a651;
 }
-
 .mt-social-icon__team a:hover i:before {
   color: #fff;
 }
@@ -1063,25 +884,21 @@ label {
   background-color: #060707;
   padding: 5px 0;
 }
-
 .mt-footer-bottom a {
   color: #393939;
   font-size: 14px;
   display: inline-block;
   font-weight: 500;
 }
-
 .mt-footer-bottom a:hover {
   color: #00a651;
 }
-
 .mt-footer-bottom li {
   margin-right: 20px;
   position: relative;
 }
-
 .mt-footer-bottom li:before {
-  content: '';
+  content: "";
   height: 15px;
   width: 1px;
   position: absolute;
@@ -1089,11 +906,9 @@ label {
   right: -10px;
   background-color: #393939;
 }
-
 .mt-footer-bottom li:last-of-type {
   margin-right: 0;
 }
-
 .mt-footer-bottom li:last-of-type:before {
   display: none;
 }
@@ -1104,102 +919,74 @@ label {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .mt-inner-page h2 {
   font-size: 50px;
   color: #00a651;
   text-transform: uppercase;
   font-weight: bold;
 }
-
 .mt-inner-page h3 {
   font-size: 38px;
 }
-
 .mt-inner-page .mt-billboard-item img {
-  -webkit-filter: unset;
-          filter: unset;
+  filter: unset;
 }
 
 .mt-about-page .mt-billboard-item img {
-  -webkit-filter: unset;
-          filter: unset;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  filter: unset;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
   -o-object-position: bottom;
      object-position: bottom;
 }
-
 .mt-about-page .mt-billboard-item:before {
   background-color: #fff;
   z-index: 0;
 }
-
 .mt-about-page .mt-about {
   margin-top: -300px;
 }
-
 .mt-about-page .mt-about .row > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
-
 .mt-about-page hgroup {
   padding-left: 15px;
   margin-bottom: 45px;
 }
-
 .mt-about-page hgroup.mt-line {
   border-left: 3px solid #ededed;
 }
-
 .mt-about-page hgroup h2 {
   text-transform: uppercase;
   font-weight: bold;
 }
-
 .mt-about-page hgroup h2:first-of-type {
   font-size: 28px;
   margin-bottom: 0;
 }
-
 .mt-about-page .message-polygon-bg {
   position: relative;
 }
-
 .mt-about-page .message-polygon-bg:after {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: -1;
   bottom: 0;
   background-color: #f4f4f4;
-  -webkit-clip-path: polygon(0 50%, 100% 25%, 100% 100%, 0 100%);
-          clip-path: polygon(0 50%, 100% 25%, 100% 100%, 0 100%);
+  clip-path: polygon(0 50%, 100% 25%, 100% 100%, 0 100%);
 }
-
 .mt-about-page .message-polygon-bg .row > div:first-of-type {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  order: 2;
 }
-
 .mt-about-page .message-polygon-bg .row > div:lat-of-type {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
 }
-
 .mt-about-page .mt-about-message .mt-message-img {
   border-radius: 15px;
   overflow: hidden;
 }
-
 .mt-about-page .mt-about-message .mt-message-img img {
   height: 500px;
   width: 100%;
@@ -1208,17 +995,14 @@ label {
   -o-object-position: center;
      object-position: center;
 }
-
 .mt-about-page .mt-about-message .mt-img-info {
   text-transform: capitalize;
   margin-top: 15px;
 }
-
 .mt-about-page .mt-about-message .mt-img-info h3 {
   font-size: 45px;
   letter-spacing: 0.03em;
 }
-
 .mt-about-page .mt-about-message .mt-img-info h4 {
   font-weight: bold;
 }
@@ -1226,7 +1010,6 @@ label {
 .mt-product-detail hgroup h1 {
   font-size: 40px;
 }
-
 .mt-product-detail hgroup h3 {
   font-size: 30px;
   font-weight: 400;
@@ -1242,18 +1025,14 @@ label {
   font-size: 15px;
   font-weight: bold;
   padding: 5px 0;
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
-
 .mt-pagination__item a, .mt-pagination__item a:before {
   color: #515151;
 }
-
 .mt-pagination__item a:hover, .mt-pagination__item.mt-active a, .mt-pagination__item a:hover:before, .mt-pagination__item a:hover:after {
   color: #00a651;
 }
-
 .mt-pagination__item--first a:before, .mt-pagination__item--last a:after, .mt-pagination__item--prev a:before, .mt-pagination__item--next a:before {
   content: "\f054";
   font-weight: bold;
@@ -1263,38 +1042,27 @@ label {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
-
 .mt-pagination__item--first a:before, .mt-pagination__item--last a:after {
   content: "\f054\f054";
   font-size: 10px;
   padding: 0 5px;
 }
-
 .mt-pagination__item--first a:before, .mt-pagination__item--prev a:before {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
-
 .mt-pagination__item--first, .mt-pagination__item--last {
   width: 65px;
   padding: 5px 6px;
 }
-
 .mt-pagination__item--first a, .mt-pagination__item--last a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .mt-pagination__item--first a {
   margin-left: -6px;
 }
-
 .mt-pagination__more a:before {
-  content: "\2022\2022\2022";
+  content: "•••";
   display: block;
   letter-spacing: 1px;
 }
@@ -1302,28 +1070,21 @@ label {
 .breadcrumbs {
   padding: 22px 0;
 }
-
 .breadcrumbs .items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
 }
-
 .breadcrumbs .items .item {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   margin-right: 15px;
 }
-
 .breadcrumbs .items .item a {
   text-transform: capitalize;
   color: #9c9c9c;
 }
-
 .breadcrumbs .items .item a:before {
   font-family: "FontAwesome";
   content: "\f101";
@@ -1334,7 +1095,6 @@ label {
   padding: 0 5px 5px;
   opacity: 0.3;
 }
-
 .breadcrumbs .items .item.mt-current-page a, .breadcrumbs .items .item.mt-current-page a:before, .breadcrumbs .items .item:hover a, .breadcrumbs .items .item:hover a:before {
   color: #00a651;
 }
@@ -1346,7 +1106,6 @@ label {
 .slider-nav {
   margin: 0 -10px;
 }
-
 .slider-nav .slick-slide {
   padding: 0 10px;
 }
@@ -1354,108 +1113,85 @@ label {
 .mt-product-info__content > ul, .mt-product-info__content > div {
   margin-bottom: 20px;
 }
-
 .mt-product-info__content--sepicalities {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.03em;
   color: #696969;
 }
-
 .mt-product-info__content--sepicalities li:before {
   content: "\f107";
   font-weight: bold;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
-
 .mt-product-info__content--rating li {
   margin-right: 5px;
 }
-
 .mt-product-info__content--rating li:last-of-type {
   margin-right: 0;
 }
-
 .mt-product-info__content--rating .fa-star:before {
   color: #ccccc6;
 }
-
 .mt-product-info__content--rating .fa-star.active:before {
   color: #00a651;
 }
-
 .mt-product-info__content--rating .mt-review-number a {
   margin-left: 15px;
   color: #929292;
   font-size: 14px;
 }
-
 .mt-product-info__content--color li {
   margin-right: 10px;
 }
-
 .mt-product-info__content--color li:last-of-type {
   margin-right: 0;
 }
-
 .mt-product-info__content--color span {
   display: inline-block;
   height: 18px;
   width: 18px;
   border-radius: 50%;
 }
-
 .mt-product-info__content--equipment h4 {
   font-size: 16px;
   color: #00a651;
 }
-
 .mt-product-info__content--equipment li {
   margin-right: 30px;
   margin-bottom: 15px;
 }
-
 .mt-product-info__content--equipment li:last-of-type {
   margin-right: 0;
 }
-
 .mt-product-info__content--number-picker a, .mt-product-info__content--number-picker input {
   font-weight: bold;
   color: #00a651;
 }
-
 .mt-product-info__content--number-picker a {
   width: 20px;
   text-align: center;
 }
-
 .mt-product-info__content--number-picker input {
   max-width: 45px;
   border: unset;
 }
-
 .mt-product-info__content--buttons a {
   margin-right: 30px;
   margin-bottom: 15px;
 }
-
 .mt-product-info__content--buttons a:last-of-type {
   margin-right: 0;
 }
-
 .mt-product-info__content--share {
   color: #929292;
 }
-
 .mt-product-info__content--share i:before {
   color: #929292;
 }
-
 .mt-product-info__content--share li {
   margin-left: 15px;
 }
-
 .mt-product-info__content--share a:hover i:before {
   color: #00a651;
 }
@@ -1464,7 +1200,6 @@ label {
   text-transform: capitalize;
   margin-right: 15px;
 }
-
 .mt-product-description-button a:last-of-type {
   margin-right: 0;
 }
@@ -1472,11 +1207,9 @@ label {
 .mt-team-page .mt-team__bg-gray {
   background-color: #ededed;
 }
-
 .mt-team-page .mt-team .col-md-4:nth-child(n+5) .mt-team__members {
   margin-top: 50px;
 }
-
 .mt-team-page .mt-team__members img {
   border-radius: 15px;
   height: 350px;
@@ -1486,29 +1219,23 @@ label {
   -o-object-position: center;
   object-position: center;
 }
-
 .mt-team-page .mt-team__members:hover .mt-overlay__team {
   opacity: 1;
   visibility: visible;
 }
-
 .mt-team-page .mt-team__img {
   position: relative;
 }
-
 .mt-team-page hgroup {
   margin-top: 20px;
 }
-
 .mt-team-page hgroup h3, .mt-team-page hgroup h4 {
   margin-bottom: 0;
   color: #141b1a;
 }
-
 .mt-team-page hgroup h3 {
   font-size: 20px;
 }
-
 .mt-team-page hgroup h4 {
   font-size: 16px;
   font-weight: normal;
@@ -1524,73 +1251,55 @@ label {
   background-color: rgba(255, 255, 255, 0.5);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .mt-contact-page {
   background-color: #f2f2f2;
 }
-
 .mt-contact-page hgroup {
   margin-bottom: 80px;
 }
-
 .mt-contact-page h1, .mt-contact-page h2 {
   position: relative;
   z-index: 1;
   color: #fff;
 }
-
 .mt-contact-page h1 {
   font-size: 30px;
   font-weight: lighter;
 }
-
 .mt-contact-page h2 {
   font-size: 40px;
   text-transform: unset;
   font-weight: 500;
 }
-
 .mt-contact-page h3 {
   font-size: 22px;
   font-weight: bold;
   color: #212020;
 }
-
 .mt-contact-page .mt-contact {
   position: relative;
   z-index: 1;
   margin-top: -400px;
 }
-
 .mt-contact-page .mt-contact__wrapper {
   background-color: #f1f2f2;
   border-radius: 10px;
   padding: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 125px;
-  -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
 }
-
 .mt-contact-page .mt-contact__info {
   width: 40%;
 }
-
 .mt-contact-page .mt-contact__info article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .mt-contact-page .mt-contact__info .icon {
   height: 75px;
   width: 75px;
@@ -1600,71 +1309,57 @@ label {
   display: inline-block;
   margin-right: 20px;
 }
-
 .mt-contact-page .mt-contact__info .icon i {
   font-size: 35px;
   color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .mt-contact-page .mt-contact__info--content p {
   margin-bottom: 0;
   color: #747474;
   line-height: 1.5;
   font-weight: 500;
 }
-
 .mt-contact-page .mt-contact__info--content h3 {
   margin-bottom: 5px;
 }
-
 .mt-contact-page .mt-contact__form {
   width: 60%;
 }
-
 .mt-contact-page .mt-input-wrapper {
   margin-bottom: 15px;
 }
-
 .mt-contact-page .mt-input-wrapper:last-of-type {
   margin-bottom: 0;
 }
-
 .mt-contact-page .mt-input-wrapper input, .mt-contact-page .mt-input-wrapper textarea {
   width: 100%;
   border: 0;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
   padding: 5px 18px;
   font-size: 18px;
   color: #3c3b3b;
   background-color: #f1f2f2;
   outline: none;
 }
-
 .mt-contact-page .mt-input-wrapper input {
   height: 50px;
 }
-
 .mt-contact-page .mt-input-wrapper textarea {
   height: 130px;
   resize: none;
 }
-
 .mt-contact-page .mt-input-wrapper .btn__primary {
   width: 150px;
-  -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
   border-radius: 50px;
   border: 2px solid #00a651;
   color: #00a651;
 }
-
 .mt-contact-page .mt-input-wrapper .btn__primary:hover {
   color: #fff;
   background-color: #00a651;
@@ -1674,11 +1369,9 @@ label {
   width: calc(50% - 13px);
   display: inline-block;
 }
-
 .mt-half:nth-child(odd) {
   margin-right: 10px;
 }
-
 .mt-half:nth-child(even) {
   margin-left: 10px;
 }
@@ -1689,37 +1382,30 @@ label {
   text-transform: unset;
   margin-bottom: 20px;
 }
-
 .mt-business-service-page h4 {
   color: #00a651;
   font-size: 30px;
 }
-
 .mt-business-service-page .mt-billboard-content {
   max-width: 1140px;
   left: 18vw;
 }
-
 .mt-business-service-page .mt-content-wrapper p {
   font-size: 18px;
   color: #2b2b2b;
   margin-bottom: 0;
 }
-
 .mt-business-service-page .mt-research-lab .mt-content-img img {
   border-radius: 10px;
 }
-
 .mt-business-service-page .mt-harvest, .mt-business-service-page .mt-business-incubation, .mt-business-service-page .mt-tech-service .mt-content-img {
   background-color: #f2f2f2;
 }
-
 .mt-business-service-page .mt-harvest__content img {
   height: 150px;
   width: auto;
   margin-bottom: 20px;
 }
-
 .mt-business-service-page .mt-tech-service .mt-content-img {
   height: 320px;
   width: 320px;
@@ -1728,14 +1414,12 @@ label {
   border: 4px solid #00a651;
   margin: auto;
 }
-
 .mt-business-service-page .mt-tech-service .mt-content-img img {
   height: 320px;
   width: auto;
   display: block;
   margin: auto;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
+  transform: translateY(30px);
 }
 
 .mt-download-page .mt-title {
@@ -1743,60 +1427,40 @@ label {
   border-radius: 10px;
   padding: 25px 0;
 }
-
 .mt-download-page .mt-title h2 {
   color: #fff;
   font-size: 30px;
   text-transform: capitalize;
   margin-bottom: 0;
 }
-
 .mt-download-page .mt-download-list__details {
   list-style: decimal;
   margin-left: 25px;
 }
-
 .mt-download-page .mt-download-list__details li {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30px 1fr  350px;
-      grid-template-columns: 30px 1fr  350px;
-      grid-template-areas: "list-number details  button";
+  grid-template-columns: 30px 1fr 350px;
+  grid-template-areas: "list-number details  button";
   margin-bottom: 30px;
   counter-increment: number;
 }
-
 .mt-download-page .mt-download-list__details li:before {
   content: counters(number, ".");
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: list-number;
 }
-
 .mt-download-page .mt-download-list__details p {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: details;
   font-size: 18px;
 }
-
 .mt-download-page .mt-download-list__details .mt-buttons {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: button;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
-
 .mt-download-page .mt-download-list .btn {
   text-transform: capitalize;
   font-weight: normal;
 }
-
 .mt-download-page .mt-download-list .btn:first-of-type {
   margin-right: 20px;
 }
@@ -1804,26 +1468,21 @@ label {
 .mt-career-page h1 {
   font-size: 60px;
 }
-
 .mt-career-page h2 {
   color: #00a651;
   font-size: 60px;
 }
-
 .mt-career-page .mt-student-content h2 {
   text-transform: uppercase;
 }
-
 .mt-career-page .mt-carrer-opening h4 {
   color: #565656;
 }
-
 .mt-career-page .mt-carrer-opening {
   position: relative;
 }
-
 .mt-career-page .mt-carrer-opening:before {
-  content: '';
+  content: "";
   background-image: url(../img/career-oppurtunities.png);
   background-position: center center;
   background-size: cover;
@@ -1833,24 +1492,19 @@ label {
   top: 0;
   right: 0;
 }
-
 .mt-career-page .mt-carrer-opening__img {
   position: relative;
   height: 100%;
 }
-
 .mt-career-page .mt-carrer-opening__img img {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 .mt-career-page .mt-carrer-opening__content--description ul {
   margin-left: 20px;
   list-style: decimal;
 }
-
 .mt-career-page .mt-carrer-opening__form label {
   display: block;
   font-size: 16px;
@@ -1859,7 +1513,6 @@ label {
   font-weight: bold;
   color: #58595b;
 }
-
 .mt-career-page .mt-carrer-opening__form input, .mt-career-page .mt-carrer-opening__form select {
   border: 0;
   color: #58595b;
@@ -1869,16 +1522,13 @@ label {
   padding: 0 12px;
   width: 100%;
 }
-
 .mt-career-page .mt-carrer-opening__form input[type=file] {
   width: 112px;
 }
-
 .mt-career-page .mt-carrer-opening__form input[type=file]::-webkit-file-upload-button {
   visibility: hidden;
   width: 100%;
 }
-
 .mt-career-page .mt-carrer-opening__form input[type=file]:before {
   content: "UPLOAD";
   padding: 3px 12px;
@@ -1889,21 +1539,17 @@ label {
   position: absolute;
   margin-top: 3px;
 }
-
 .mt-career-page .mt-carrer-opening__form .mt-input-wrapper {
   margin-bottom: 30px;
 }
-
 .mt-career-page .mt-carrer-opening__form .btn__primary {
   width: 150px;
-  -webkit-box-shadow: unset;
   box-shadow: unset;
   border-radius: 50px;
   border: 2px solid #58595b;
   color: #58595b;
   background-color: transparent;
 }
-
 .mt-career-page .mt-carrer-opening__form .btn__primary:hover {
   color: #fff;
   background-color: #58595b;
@@ -1912,10 +1558,8 @@ label {
 .item::before {
   cursor: pointer;
 }
-
 .item.active .item-content {
   margin-top: 30px;
-  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -1926,21 +1570,17 @@ This is the minimum CSS that you will need in order for this to work
 .tabbed-content .tabs {
   display: none;
 }
-
 .tabbed-content .item {
   min-height: 2em;
 }
-
 .tabbed-content .item::before {
   content: attr(data-title);
 }
-
 .tabbed-content .item .item-content {
   opacity: 0;
   visibility: hidden;
   height: 0;
 }
-
 .tabbed-content .item.active .item-content {
   opacity: 1;
   visibility: visible;
@@ -1950,34 +1590,27 @@ This is the minimum CSS that you will need in order for this to work
 .tabbed-content .tabs {
   display: block;
 }
-
 .tabbed-content .tabs li {
   margin-right: 20px;
   margin-bottom: 15px;
   display: inline-block;
 }
-
 .tabbed-content .tabs li a {
   display: block;
 }
-
 .tabbed-content .item {
   min-height: 0;
 }
-
 .tabbed-content .item::before {
   display: none;
 }
-
 .tabbed-content.tabs-side .tabs {
   width: 150px;
   float: left;
 }
-
 .tabbed-content.tabs-side .tabs li {
   display: block;
 }
-
 .tabbed-content.tabs-side .item {
   margin-left: 150px;
 }
@@ -1987,8 +1620,7 @@ This is the minimum CSS that you will need in order for this to work
     opacity: 0;
     visibility: hidden;
     height: 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    transition: all 0.5s;
     position: relative;
     background-color: #00a651;
     z-index: 1;
@@ -2011,9 +1643,7 @@ This is the minimum CSS that you will need in order for this to work
   li.form-wrapper.form-wrapper__menu-search .mt-input-wrapper {
     width: 80%;
     margin: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   li.form-wrapper.form-wrapper__menu-search .mt-input-wrapper .icon {
     position: relative;
@@ -2036,7 +1666,6 @@ This is the minimum CSS that you will need in order for this to work
     z-index: 2;
   }
   .ham-menu.active span:first-of-type {
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     margin-top: 12px;
     height: 4px;
@@ -2045,7 +1674,6 @@ This is the minimum CSS that you will need in order for this to work
     display: none;
   }
   .ham-menu.active span:last-of-type {
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     margin-top: -8px;
     height: 4px;
@@ -2057,7 +1685,6 @@ This is the minimum CSS that you will need in order for this to work
     background: unset;
     padding: 15px 0 0 30px;
     display: none;
-    -webkit-transition: unset;
     transition: unset;
     border-left: 1px solid #E1E2E6;
     margin-left: 10px;
@@ -2073,16 +1700,14 @@ This is the minimum CSS that you will need in order for this to work
     z-index: 2;
   }
   .mt-customer-icon a:hover img, .mt-customer-icon .active img {
-    -webkit-filter: invert(15%) sepia(97%) saturate(3092%) hue-rotate(150deg) brightness(98%) contrast(98%);
-            filter: invert(15%) sepia(97%) saturate(3092%) hue-rotate(150deg) brightness(98%) contrast(98%);
+    filter: invert(15%) sepia(97%) saturate(3092%) hue-rotate(150deg) brightness(98%) contrast(98%);
   }
   .mt-customer-icon a:hover span.sell {
     background-color: #026f37;
     color: #fff;
   }
   .mt-customer-icon img {
-    -webkit-filter: invert(1);
-            filter: invert(1);
+    filter: invert(1);
   }
   .mt-customer-icon li span.sell {
     background-color: #fff;
@@ -2107,13 +1732,11 @@ This is the minimum CSS that you will need in order for this to work
     padding: 75px 45px;
   }
 }
-
 @media screen and (max-width: 1030px) {
   .mt-header__top {
     padding: 0 30px;
   }
 }
-
 @media screen and (max-width: 991px) {
   .mt-billboard-content {
     left: 100px;
@@ -2123,26 +1746,18 @@ This is the minimum CSS that you will need in order for this to work
     margin-bottom: 30px;
   }
   .mt-footer-wrapper .row > div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-bottom: 30px;
   }
   .mt-footer-wrapper .row > div:nth-of-type(1) {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .mt-footer-wrapper .row > div:nth-of-type(2) {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
     margin-top: 30px;
   }
   .mt-footer-wrapper .row > div:nth-of-type(3) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
   .mt-about-page .mt-about {
     margin-top: -100px;
@@ -2164,29 +1779,24 @@ This is the minimum CSS that you will need in order for this to work
   }
   .mt-contact-page .mt-contact__wrapper {
     padding: 50px 30px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .mt-contact-page .mt-contact__info, .mt-contact-page .mt-contact__form {
     width: 100%;
   }
   .mt-contact-page .mt-contact__info article {
     width: 48%;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
   }
   .mt-career-page h2 {
     font-size: 40px;
   }
 }
-
 @media screen and (max-width: 991px) and (min-width: 767px) {
   .mt-objective__item {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 767px) {
   h2,
   h3 {
@@ -2263,25 +1873,17 @@ This is the minimum CSS that you will need in order for this to work
     width: 100%;
   }
   .mt-payment-options {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-bottom: 30px;
   }
   .mt-footer-wrapper .row > div:nth-of-type(1) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
   .mt-footer-wrapper .row > div:nth-of-type(2) {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .mt-footer-wrapper .row > div:nth-of-type(3) {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .mt-about-page .mt-about {
     margin-top: -150px;
@@ -2290,14 +1892,10 @@ This is the minimum CSS that you will need in order for this to work
     max-height: 250px;
   }
   .mt-about-message .row > div:first-of-type {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .mt-about-message .row > div:lat-of-type {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .mt-product-detail hgroup h1 {
     font-size: 32px;
@@ -2337,22 +1935,17 @@ This is the minimum CSS that you will need in order for this to work
     margin-left: 0;
   }
   .mt-download-page .mt-download-list__details li {
-    -ms-grid-columns: 30px 1fr;
-        grid-template-columns: 30px 1fr;
-    -ms-grid-rows: 1fr 70px;
-        grid-template-rows: 1fr 70px;
-        grid-template-areas: "list-number details " "button button";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 1fr 70px;
+    grid-template-areas: "list-number details " "button button";
   }
   .mt-download-page .mt-download-list__details p {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
     grid-area: details;
   }
   .mt-carrer-opening__img {
     display: none;
   }
 }
-
 @media screen and (max-width: 575px) {
   .mt-inner-page h2,
   .mt-inner-page h3 {
@@ -2387,20 +1980,16 @@ This is the minimum CSS that you will need in order for this to work
     margin-left: 0;
   }
 }
-
 @media screen and (max-width: 450px) {
   .mt-main-logo {
     left: 30px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     max-width: 65%;
     min-width: 100px;
   }
   .form-wrapper__newletter .mt-input-wrapper {
-    -ms-grid-columns: unset;
-        grid-template-columns: unset;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 1fr;
   }
   .form-wrapper__newletter .mt-input-wrapper input {
     border-radius: 30px !important;
@@ -2419,5 +2008,4 @@ This is the minimum CSS that you will need in order for this to work
     margin-bottom: 15px;
     margin-right: 0;
   }
-}
-/*# sourceMappingURL=main-style.css.map */
+}/*# sourceMappingURL=main-style.css.map */
